@@ -4,6 +4,20 @@ alias ta='tmux a'
 alias tapp='tmux a -t'
 alias tkill='tmux kill-session -t'
 
+# cd alias
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# git alias
+alias gs='git status'
+alias gc='git commit'
+alias ga='git add'
+
+# override alias
+alias mkdir='mkdir -p'
+alias mv='mv -i'
+
 # some shortcut function
 wdin () {
     pwd > ~/.mydir
@@ -17,4 +31,14 @@ wdout () {
 agstart () {
     eval `ssh-agent`
     ssh-add
+}
+
+# dotfile config
+add_df () {
+    mv "~/$1" "~/.dotfiles/$1"
+    ln -s "~/.dotfiles/$1" "~/$1"
+    cd ~/.dotfiles
+    ga "$1"
+    gc -m "add file $1"
+    cd -
 }
