@@ -13,6 +13,7 @@ alias ....='cd ../../..'
 alias gs='git status'
 alias gc='git commit'
 alias ga='git add'
+alias gl='git log --oneline'
 
 # override alias
 alias mkdir='mkdir -p'
@@ -38,7 +39,7 @@ add_df () {
     mv "~/$1" "~/.dotfiles/$1"
     ln -s "~/.dotfiles/$1" "~/$1"
     cd ~/.dotfiles
-    ga "$1"
-    gc -m "add file $1"
+    git add "$1"
+    git commit -m "add file $1"
     cd -
 }
