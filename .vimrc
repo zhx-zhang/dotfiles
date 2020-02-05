@@ -80,6 +80,9 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " ctrlp support
+if v:version < 800
+    set runtimepath^=~/.vim/bundle/ctrlp.vim
+endif
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
