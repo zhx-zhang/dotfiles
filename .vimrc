@@ -32,6 +32,8 @@ Plugin 'dracula/vim', {'name': 'dracula'}
 Plugin 'itchyny/lightline.vim'
 Plugin 'cocopon/iceberg.vim'
 Plugin 'raingo/vim-matlab'
+Plugin 'preservim/nerdtree'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -61,7 +63,7 @@ set number
 colorscheme iceberg
 let g:lightline = { 'colorscheme': 'iceberg' }
 
-" turn of -- MODE -- indicator
+" turn off -- MODE -- indicator
 set noshowmode
 
 " This enables relative line numbering mode. With both number and
@@ -130,3 +132,6 @@ nnoremap <Left> <C-W>h
 nnoremap <Right> <C-W>l
 nnoremap <Up> <C-W>k
 nnoremap <Down> <C-W>j
+
+" NERDTree support
+nnoremap <C-n> :NERDTreeToggle<CR>
