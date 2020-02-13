@@ -29,6 +29,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'dracula/vim', {'name': 'dracula'}
+Plugin 'itchyny/lightline.vim'
+Plugin 'cocopon/iceberg.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,8 +56,12 @@ set shortmess+=I
 " Show line numbers.
 set number
 
-" dracula color scheme
-colorscheme dracula
+" color scheme
+colorscheme iceberg
+let g:lightline = { 'colorscheme': 'iceberg' }
+
+" turn of -- MODE -- indicator
+set noshowmode
 
 " This enables relative line numbering mode. With both number and
 " relativenumber enabled, the current line shows the true line number, while
