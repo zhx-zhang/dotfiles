@@ -31,6 +31,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'dracula/vim', {'name': 'dracula'}
 Plugin 'itchyny/lightline.vim'
 Plugin 'cocopon/iceberg.vim'
+Plugin 'raingo/vim-matlab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
