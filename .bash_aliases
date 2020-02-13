@@ -13,7 +13,7 @@ alias ....='cd ../../..'
 alias gs='git status'
 alias gc='git commit'
 alias ga='git add'
-alias gl='git log --oneline'
+alias gl='git log --oneline --decorate'
 
 # override alias
 alias mkdir='mkdir -p'
