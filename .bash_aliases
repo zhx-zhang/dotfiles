@@ -31,7 +31,7 @@ wdout () {
 # for ssh agent
 agstart () {
     eval `ssh-agent`
-    ssh-add
+    ssh-add ~/.ssh/$(echo $HOSTNAME)_ed25519
 }
 
 # dotfile config
