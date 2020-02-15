@@ -34,6 +34,7 @@ Plugin 'cocopon/iceberg.vim'
 Plugin 'raingo/vim-matlab'
 Plugin 'preservim/nerdtree'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -128,10 +129,10 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
 " jump across windows more easily
-nnoremap <Left> <C-W>h
-nnoremap <Right> <C-W>l
-nnoremap <Up> <C-W>k
-nnoremap <Down> <C-W>j
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
+nnoremap <C-k> <C-W>k
+nnoremap <C-j> <C-W>j
 
 " NERDTree support
 nnoremap <C-n> :NERDTreeToggle<CR>
