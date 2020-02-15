@@ -11,9 +11,11 @@ alias ....='cd ../../..'
 
 # git alias
 alias gs='git status'
-alias gc='git commit'
+alias gc='git commit -a -m'
 alias ga='git add'
 alias gl='git log --oneline --decorate'
+alias gpull='git pull origin'
+alias gpush='git push origin'
 
 # override alias
 alias mkdir='mkdir -p'
@@ -32,6 +34,11 @@ wdout () {
 agstart () {
     eval `ssh-agent`
     ssh-add ~/.ssh/$(echo $HOSTNAME)_ed25519
+}
+
+# switch to bash on server
+sbash () {
+    ssh $1 -t "bash"
 }
 
 # dotfile config
