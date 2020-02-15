@@ -63,6 +63,9 @@ set number
 " color scheme
 colorscheme iceberg
 let g:lightline = { 'colorscheme': 'iceberg' }
+" set a transparent background
+hi Normal guibg=NONE ctermbg=NONE
+hi NonText guibg=NONE ctermbg=NONE
 
 " turn off -- MODE -- indicator
 set noshowmode
