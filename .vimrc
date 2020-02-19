@@ -65,7 +65,11 @@ colorscheme iceberg
 let g:lightline = { 'colorscheme': 'iceberg' }
 " set a transparent background
 hi Normal guibg=NONE ctermbg=NONE
-hi NonText guibg=NONE ctermbg=NONE
+if version >= 800
+    hi EndOfBuffer guibg=NONE ctermbg=NONE
+else
+    hi NonText guibg=NONE ctermbg=NONE
+endif
 
 " turn off -- MODE -- indicator
 set noshowmode
