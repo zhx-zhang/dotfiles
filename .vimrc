@@ -34,7 +34,7 @@ Plugin 'cocopon/iceberg.vim'
 Plugin 'raingo/vim-matlab'
 Plugin 'preservim/nerdtree'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'jiangmiao/auto-pairs'
+" Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
