@@ -13,7 +13,7 @@ alias ....='cd ../../..'
 alias gs='git status'
 alias gc='git commit -a -m'
 alias ga='git add'
-alias gl='git log --oneline --decorate'
+alias gl='git log --oneline --decorate --all --graph'
 alias gpull='git pull --rebase origin'
 alias gpush='git push origin'
 
