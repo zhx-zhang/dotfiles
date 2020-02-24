@@ -63,7 +63,19 @@ set number
 
 " color scheme
 colorscheme iceberg
-let g:lightline = { 'colorscheme': 'iceberg' }
+
+" show git branch in status bar
+let g:lightline = {
+      \ 'colorscheme': 'iceberg',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
+
 " set a transparent background
 hi Normal guibg=NONE ctermbg=NONE
 if version >= 800
