@@ -28,12 +28,13 @@ Plugin 'VundleVim/Vundle.vim'
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'dracula/vim', {'name': 'dracula'}
+" Plugin 'dracula/vim', {'name': 'dracula'}
 Plugin 'itchyny/lightline.vim'
 Plugin 'cocopon/iceberg.vim'
 Plugin 'raingo/vim-matlab'
 Plugin 'preservim/nerdtree'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 " Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
