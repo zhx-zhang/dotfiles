@@ -34,6 +34,7 @@ Plugin 'cocopon/iceberg.vim'
 Plugin 'raingo/vim-matlab'
 Plugin 'preservim/nerdtree'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-fugitive'
 " Plugin 'jiangmiao/auto-pairs'
 
