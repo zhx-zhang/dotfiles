@@ -131,6 +131,29 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 set mouse+=a
 
+" Change the leader key to SPACE
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
+" Faster moving around
+nnoremap H ^
+nnoremap L g_
+nmap J 5j
+vmap J 5j
+nmap K 5k
+vmap K 5k
+
+" Workaround for HJKL
+nnoremap <Leader>H H
+nnoremap <Leader>L L
+nnoremap <Leader>J J
+nnoremap <Leader>K K
+vnoremap <Leader>J J
+vnoremap <Leader>K K
+
+" No Highlight
+nnoremap <Leader><Space> :noh<CR>
+
 " ctrlp support
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
