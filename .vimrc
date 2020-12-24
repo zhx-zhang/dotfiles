@@ -64,6 +64,7 @@ set number
 
 " color scheme
 colorscheme iceberg
+set bg=dark
 
 " show git branch in status bar
 let g:lightline = {
