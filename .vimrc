@@ -29,8 +29,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'ctrlpvim/ctrlp.vim'
 " Plugin 'dracula/vim', {'name': 'dracula'}
-Plugin 'itchyny/lightline.vim'
 Plugin 'cocopon/iceberg.vim'
+Plugin 'itchyny/lightline.vim'
 Plugin 'raingo/vim-matlab'
 Plugin 'preservim/nerdtree'
 Plugin 'airblade/vim-gitgutter'
@@ -64,7 +64,7 @@ set number
 
 " color scheme
 colorscheme iceberg
-set bg=dark
+set bg=light
 
 " show git branch in status bar
 let g:lightline = {
